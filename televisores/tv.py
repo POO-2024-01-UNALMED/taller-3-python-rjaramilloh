@@ -6,6 +6,7 @@ class TV:
         self._precio = 500
         self._estado = estado
         self._volumen = 1
+        self._control = None
         TV._numTv+=1
 
     @classmethod
@@ -34,12 +35,12 @@ class TV:
             self._canal-=1
 
     def volumenUp (self):
-        if (self.volumen < 7 and self.estado == True):
-            self.volumen+=1
+        if (self._volumen < 7 and self._estado == True):
+            self._volumen+=1
 
     def volumenDown (self):
-        if (self.volumen > 0 and self.estado == True):
-            self.volumen-=1
+        if (self._volumen > 0 and self._estado == True):
+            self._volumen-=1
 #/////////////////////////////////////////////
     def setMarca (self, marca):
         self._marca = marca
