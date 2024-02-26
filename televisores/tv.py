@@ -37,7 +37,7 @@ class TV:
         if (self.volumen < 7 and self.estado == True):
             self.volumen+=1
 
-    def columenDown (self):
+    def volumenDown (self):
         if (self.volumen > 0 and self.estado == True):
             self.volumen-=1
 #/////////////////////////////////////////////

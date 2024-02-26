@@ -1,7 +1,7 @@
 class Control:
 
     def __init__(self):
-        self._tv=None
+        self._tv = None
     
     def turnOn(self):
         if self.tv:
@@ -32,9 +32,8 @@ class Control:
             self._tv.setVolumen(volumen)
     
     def enlazar (self, tv):
-        if self.tv:
-            tv.setControl(self)
-            self._tv = tv
+        self._tv = tv
+        tv.setControl(self)
     
     def getTv (self):
         return self._tv
