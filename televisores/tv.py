@@ -1,17 +1,12 @@
 class TV:
     _numTv = 0
-    def __int__(self,marca,estado,control):
+    def __int__(self,marca,estado):
         self._marca = marca
         self._canal = 1
         self._precio = 500
         self._estado = estado
         self._volumen = 1
-        self._control = control
-    
-    def setTv (self,marca,estado):
-        self._marca = marca
-        self._estado = estado
-        _numTv+=1
+        TV._numTv+=1
 
     @classmethod
     def getNumTv(cls):
